@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './../../style/App.css';
 
-function Profile() {
+function Photos() {
   return (
     <div className="App">
       <header className="App-header">
@@ -16,11 +16,11 @@ function Profile() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Profile
+          Photos
         </a>
       </header>
     </div>
   );
 }
 
-export default Profile;
+export default Photos;

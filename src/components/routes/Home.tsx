@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './../../style/App.css';
 
-function Photos() {
+function Home() {
   return (
     <div className="App">
       <header className="App-header">
@@ -16,11 +16,11 @@ function Photos() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Photos
+          Home
         </a>
       </header>
     </div>
   );
 }
 
-export default Photos;
+export default Home;

@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import Blog from './Blog';
-import Home from './Home';
-import Photos from './Photos';
-import Profile from './Profile';
+import App from './components/routes/App';
+import Blog from './components/routes/Blog';
+import Home from './components/routes/Home';
+import Photos from './components/routes/Photos';
+import Profile from './components/routes/Profile';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
