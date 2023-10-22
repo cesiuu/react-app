@@ -2,6 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Blog from './Blog';
+import Home from './Home';
+import Photos from './Photos';
+import Profile from './Profile';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
