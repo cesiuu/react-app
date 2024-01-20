@@ -1,0 +1,45 @@
+/* Modify your photos.css file */
+
+.photo-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.photo-list li {
+  background-color: #ccccdd;
+  cursor: pointer;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid #fff;
+  color: black;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.photo-list li:hover {
+  transform: scale(1.1);
+}
+
+.photo-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}

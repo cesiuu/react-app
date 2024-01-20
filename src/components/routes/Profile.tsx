@@ -1,24 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './../../style/App.css';
+import React, { useEffect } from 'react';
+import { useContext } from 'react';
+import { UserContext } from './UserContext';
+import './../../style/profile.css';
 
 function Profile() {
+  useEffect(() => {
+    document.title = "Profile"
+ }, []);
+  const { currentUser } = useContext(UserContext);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Profile
-        </a>
-      </header>
+    <div className="profile-container">
+      {currentUser ? (
+        <>
+          <div className="profile-details">
+            <h2>Account information</h2>
+            <h3>Name: {currentUser.name}</h3>
+            <h3>Email: {currentUser.email}</h3>
+            <h3>Street: {currentUser.address.street}</h3>
+            <h3>Suite: {currentUser.address.suite}</h3>
+            <h3>City: {currentUser.address.city}</h3>
+            <h3>Zip code: {currentUser.address.zipcode}</h3>
+          </div>
+        </>
+      ) : (
+        <div className="profile-guest">
+          <h2>Welcome, Guest!</h2>
+        </div>
+      )}
     </div>
   );
 }

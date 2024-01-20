@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './style/index.css';
 import App from './components/routes/App';
-import Blog from './components/routes/Blog';
+import Blog from './components/routes/Todo';
 import Home from './components/routes/Home';
 import Photos from './components/routes/Photos';
 import Profile from './components/routes/Profile';

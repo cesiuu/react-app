@@ -1,0 +1,36 @@
+/* Resetowanie domyślnych stylów dla listy */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Stylizacja menu nawigacyjnego */
+  nav {
+    background-color: #333; /* Kolor tła menu */
+    display: flex; /* Wyświetlanie elementów horyzontalnie */
+    justify-content: center; /* Wyśrodkowanie elementów */
+    padding: 50px 0; /* Wewnętrzny odstęp góra/dół */
+  }
+  
+  nav ul {
+    display: flex; /* Wyświetlanie elementów horyzontalnie */
+  }
+  
+  nav li {
+    margin-left: 50px; /* Odstęp między elementami */
+    margin-right: 200px;
+  }
+  
+  /* Stylizacja linków nawigacyjnych */
+  nav a {
+    text-decoration: none; /* Usunięcie podkreślenia linków */
+    color: #fff; /* Kolor tekstu */
+    font-weight: bold;
+    transition: color 0.3s; /* Animacja zmiany koloru tekstu */
+  }
+  
+  nav a:hover {
+    color: #ff6600; /* Kolor tekstu po najechaniu kursorem */
+  }
+  
